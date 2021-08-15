@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Sorter_1 = require("./Sorter");
+var NumbersCollection_1 = require("./NumbersCollection");
+var CharactersCollection_1 = require("./CharactersCollection");
+var numbersCollection = new NumbersCollection_1.NumbersCollection([10, -2, 3, 5]);
+var characters = new CharactersCollection_1.CharactersCollection("dcTa");
+var sorter = new Sorter_1.Sorter(characters);
+sorter.sort();
+console.log(characters.data);
